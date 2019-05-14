@@ -1,1 +1,11 @@
-hello world
+---
+layout: default
+---
+
+<h1>Commented designs</h1>
+
+<ul>
+{% for page in site.designs %}
+  <li><a href="{{ page.url }}"> {{ page.title }}</a></li>
+{% endfor %}
+</ul>

@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<h2 class="title">{{ page.title }}</h2>
+
+{% if page.image %}
+<img src="/img/{{ page.image }}" />
+{% endif %}
+
+{{ content }}
+
+{% include disqus.html %}
